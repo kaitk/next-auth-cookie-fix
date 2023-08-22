@@ -22,6 +22,9 @@
       "require": "./next-auth-cookie-fix/my-lib.umd.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^20.5.2",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
