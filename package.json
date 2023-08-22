@@ -1,6 +1,6 @@
 {
   "name": "next-auth-cookie-fix",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A library to monkey patch NextAuth to use Session cookies via Next.js middleware",
   "author": "Kait Kasak",
   "license": "MIT",
@@ -18,13 +18,11 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./next-auth-cookie-fix/my-lib.js",
-      "require": "./next-auth-cookie-fix/my-lib.umd.cjs"
+      "import": "./dist/next-auth-cookie-fix.js",
+      "require": "./dist/next-auth-cookie-fix.umd.cjs"
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@types/node": "^20.5.2",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
