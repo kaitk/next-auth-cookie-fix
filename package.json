@@ -1,0 +1,39 @@
+{
+  "name": "next-auth-cookie-fix",
+  "version": "0.0.1",
+  "description": "A library to monkey patch NextAuth to use Session cookies via Next.js middleware",
+  "author": "Kait Kasak",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "main": "./dist/next-auth-cookie-fix.umd.cjs",
+  "module": "./dist/next-auth-cookie-fix.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./next-auth-cookie-fix/my-lib.js",
+      "require": "./next-auth-cookie-fix/my-lib.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.2",
+    "vitest": "^0.34.2"
+  },
+  "peerDependencies": {
+    "next": "^13.3.0"
+  }
+}
