@@ -4,6 +4,7 @@
   "description": "A library to monkey patch NextAuth to use Session cookies via Next.js middleware",
   "author": "Kait Kasak",
   "license": "MIT",
+  "repository": "git@github.com:kaitk/next-auth-cookie-fix.git",
   "type": "module",
   "scripts": {
     "dev": "vite",
